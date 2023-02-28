@@ -346,6 +346,7 @@
 "Assets/Breakable Windows/Scripts/BreakableWindow.cs"
 "Assets/FirstPersion AIO Pack/FirstPersonAIO/FirstPersonAIO.cs"
 "Assets/script/NextStage.cs"
+"Assets/script/TimeOver.cs"
 "Assets/script/WarpPoint.cs"
 -langversion:9.0
 

@@ -1,5 +1,6 @@
 {
-  "FilePath": "c:\\Users\\ラキ\\Desktop\\stationexeUnity\\stationexe\\Unity Project stationexe\\Unity.VisualScripting.Shared.Editor.csproj",
+  "SerializedFilePath": "c:\\Users\\ラキ\\Desktop\\stationexeUnity\\stationexe\\Unity Project stationexe\\obj\\Debug\\project.razor.json",
+  "FilePath": "c:\\Users\\ラキ\\Desktop\\stationexeUnity\\stationexe\\Unity Project stationexe\\Unity.VSCode.Editor.csproj",
   "Configuration": {
     "ConfigurationName": "UnsupportedRazor",
     "LanguageVersion": "1.0",
@@ -15,5 +16,5 @@
   },
   "RootNamespace": null,
   "Documents": [],
-  "SerializationFormat": "0.2"
+  "SerializationFormat": "0.3"
 }
