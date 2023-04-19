@@ -2,12 +2,15 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BreakableWindow
+    - Enemycontolor
     - FirstPersonAIO
     - NextStage
     - TimeOver
     - WarpPoint
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -18,6 +21,29 @@ ScriptsOnlyBuild:
     - FirstPersonAIO/CrouchModifiers
     - FirstPersonAIO/DynamicFootStep
   sceneClasses:
+    Assets/Scenes/GameClear.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
     Assets/Scenes/GameOver.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -83,7 +109,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 6550}
+      Script: {instanceID: 6554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -127,6 +153,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -134,9 +164,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 4224}
+      Script: {instanceID: 4226}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 4432}
+    - Class: 114
+      Script: {instanceID: 5348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -145,7 +177,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -529,6 +565,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: gameClearscript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnJointBreak2DMessageListener
@@ -562,6 +604,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCancelMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 0d85f4fda1e0e70cd92c084d12f05cdc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemycontolor
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -912,6 +960,12 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
+      Hash: 25d218c5001ecea2d12457480d82f80d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: scr_camera
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -957,5 +1011,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/StationGameStage2.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: "C:/Users/\u30E9\u30AD/Desktop/stationexeUnity/stationexe/Unity Project
-    stationexe/Build/Unity Project stationexe.exe"
+  - Assets/Scenes/GameClear.unity
+  playerPath: "C:/Users/427h2/OneDrive/\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7/stationexe/Unity
+    Project stationexe/Build/Unity Project stationexe.exe"
