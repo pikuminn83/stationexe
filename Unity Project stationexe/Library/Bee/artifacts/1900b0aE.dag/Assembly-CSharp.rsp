@@ -351,6 +351,8 @@
 "Assets/script/playersarti.cs"
 "Assets/script/SceneWarp/gameClearscript.cs"
 "Assets/script/SceneWarp/NextStage.cs"
+"Assets/script/SceneWarp/ReturntoStart.cs"
+"Assets/script/SceneWarp/StartGame.cs"
 "Assets/script/SceneWarp/TimeOver.cs"
 "Assets/script/WarpPoint.cs"
 "Assets/scriptDast/Enemycontolor.cs"

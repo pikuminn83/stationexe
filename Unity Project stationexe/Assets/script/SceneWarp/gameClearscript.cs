@@ -12,7 +12,7 @@ public class gameClearscript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnCollisionEnter(Collision collision)
     {
         Invoke("ChangeSceneGameClear", 0.01f);
     }

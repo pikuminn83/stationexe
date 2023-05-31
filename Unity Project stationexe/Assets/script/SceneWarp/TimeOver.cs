@@ -3,12 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+using System;
 
 public class TimeOver : MonoBehaviour
 {
     public string Enemy;
     private float counttime= 0.0f;//時間をはかる
     public float timLimet = 30.0f;
+
+
+    [SerializeField]
+    TextMeshProUGUI timeText;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,16 +30,18 @@ public class TimeOver : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+        //timeを表示する
+        timeText.text = "Time:"+counttime.ToString("N2");
 
     }
-    private void OnCollisionEnter(Collision col)
+   void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("Hit");
-        if(col.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Hit2");
+            SceneManager.LoadScene("GameOver");
         }
 
     }
-    
+
 }
