@@ -349,6 +349,7 @@
 "Assets/script/Enemydirection.cs"
 "Assets/script/EnemyMoveTurn.cs"
 "Assets/script/playersarti.cs"
+"Assets/script/Playertarget.cs"
 "Assets/script/SceneWarp/gameClearscript.cs"
 "Assets/script/SceneWarp/NextStage.cs"
 "Assets/script/SceneWarp/ReturntoStart.cs"

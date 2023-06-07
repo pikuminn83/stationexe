@@ -9,7 +9,9 @@ using UnityEngine.AI;
 public class playersarti : MonoBehaviour
 {
     public Transform[] points;
+
     [SerializeField] int destPoint = 0;
+
     private NavMeshAgent agent;
 
     Vector3 playerPos;
@@ -47,15 +49,18 @@ public class playersarti : MonoBehaviour
         // 配列内の次の位置を目標地点に設定し、
         // 必要ならば出発地点にもどります
         destPoint = (destPoint + 1) % points.Length;
+
+
     }
 
 
     void Update()
     {
+        
         //Playerとこのオブジェクトの距離を測る
         playerPos = player.transform.position;
         distance = Vector3.Distance(this.transform.position, playerPos);
-        
+
 
         if (tracking)
         {

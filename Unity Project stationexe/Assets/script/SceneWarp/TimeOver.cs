@@ -10,7 +10,7 @@ public class TimeOver : MonoBehaviour
 {
     public string Enemy;
     private float counttime= 0.0f;//時間をはかる
-    public float timLimet = 30.0f;
+    public float timLimet = 0.0f;
 
 
     [SerializeField]
@@ -24,14 +24,14 @@ public class TimeOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        counttime += Time.deltaTime;
+        timLimet -= Time.deltaTime;
 
         if(counttime> timLimet)
         {
             SceneManager.LoadScene("GameOver");
         }
         //timeを表示する
-        timeText.text = "Time:"+counttime.ToString("N2");
+        timeText.text = "TimeLimet:"+timLimet.ToString("N2");
 
     }
    void OnCollisionEnter(Collision collision)
