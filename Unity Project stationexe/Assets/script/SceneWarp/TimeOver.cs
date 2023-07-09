@@ -15,6 +15,7 @@ public class TimeOver : MonoBehaviour
 
     [SerializeField]
     TextMeshProUGUI timeText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,9 +40,16 @@ public class TimeOver : MonoBehaviour
         //Debug.Log("Hit");
         if(collision.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene("GameOver");
+
+            transform.LookAt(collision.transform);
+ 
+            Invoke("Scenechenge",1.0f);
         }
 
+    }
+    void Scenechenge()
+    {
+         SceneManager.LoadScene("GameOver");
     }
 
 }
